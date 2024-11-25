@@ -141,7 +141,7 @@ class Zombie:
         self.x += distance * math.cos(self.dir)
         self.y += distance * math.sin(self.dir)
 
-        if not self.is_boy_nearby(14):
+        if not self.is_boy_nearby(7):
             return BehaviorTree.SUCCESS
         else:
             return BehaviorTree.RUNNING
